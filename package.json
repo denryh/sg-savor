@@ -25,6 +25,10 @@
   },
   "devDependencies": {
     "prisma": "^4.13.0",
+    "slugify": "^1.6.6",
     "ts-node": "^10.9.1"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   }
 }

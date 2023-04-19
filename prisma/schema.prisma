@@ -20,19 +20,19 @@ model District {
   id          String               @id @default(cuid())
   sub         Boolean              @default(false)
   name        String
-  slug        String          
-  wards       Ward[]               
+  slug        String
   restaurants RestaurantLocation[]
+  wards       Ward[]
 }
 
 model Ward {
   id          String               @id @default(cuid())
   sub         Boolean              @default(false)
-  name        String               
+  name        String
   slug        String
   districtId  String
-  district    District             @relation(fields: [districtId], references: [id])
   restaurants RestaurantLocation[]
+  district    District             @relation(fields: [districtId], references: [id])
 }
 
 model RestaurantLocation {
