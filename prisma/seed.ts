@@ -1,4 +1,4 @@
-import sg from './sg.json'
+import sg from '@/pages/api/saigon/sg.json'
 import slugify from 'slugify'
 import { PrismaClient } from '@prisma/client'
 
