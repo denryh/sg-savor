@@ -8,12 +8,15 @@ datasource db {
 }
 
 model Restaurant {
-  id          String               @id @default(cuid())
-  name        String               @unique
-  description String?
-  createdAt   DateTime             @default(now())
-  address     String
-  location    RestaurantLocation[]
+  id            String               @id @default(cuid())
+  name          String               @unique
+  description   String?
+  createdAt     DateTime             @default(now())
+  address       String
+  startingPrice Decimal
+  openTime      DateTime             @db.Time
+  closeTime     DateTime             @db.Time
+  location      RestaurantLocation[]
 }
 
 model District {
