@@ -7,15 +7,14 @@ export function MobileMenu() {
       onClick={(e) => e.stopPropagation()}
     >
       <li className="border-black/50 hover:border-b">
-        <Link href="/about">About</Link>
+        <Link href="/about">Giới thiệu</Link>
       </li>
       <li className="border-black/50 hover:border-b">
-        <Link href="/foods">Foods</Link>
+        <Link href="/foods">Tìm kiếm</Link>
       </li>
       <li className="border-black/50 hover:border-b">
-        <Link href="/submit">Submit</Link>
+        <Link href="/submit">Góp sức</Link>
       </li>
-      <li className="mt-auto text-xs">Created by Denryh</li>
     </ul>
   )
 }
